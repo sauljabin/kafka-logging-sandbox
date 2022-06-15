@@ -1,0 +1,9 @@
+.idea/
+.gradle/
+.settings/
+build/
+bin/
+.vscode
+.project
+.classpath
+.dccache
