@@ -19,8 +19,6 @@ It does not tell you **how** to monitor kafka application, but rather it's going
 
 ## Get Started
 
-Update the virtual memory as it is said at [here](https://www.elastic.co/guide/en/elasticsearch/reference/master/docker.html#_set_vm_max_map_count_to_at_least_262144).
-
 Create a docker network:
 
 ```sh
@@ -30,9 +28,10 @@ docker network create elk-sandbox_network
 Run the elk cluster:
 
 ```sh
-cd elk
-docker compose up -d
+cd elk && docker compose up -d
 ```
+
+> Update the virtual memory as it is said at [here](https://www.elastic.co/guide/en/elasticsearch/reference/master/docker.html#_set_vm_max_map_count_to_at_least_262144) if you are receiving erros like **max virtual memory areas vm.max_map_count is too low, increase to at least [262144]**.
 
 Test that is running:
 

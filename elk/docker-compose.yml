@@ -27,7 +27,7 @@ services:
     environment:
       TZ: America/Guayaquil
     ports:
-      - '5000:5000'
+      - '5050:5050'
     restart: on-failure
     volumes:
       - ./configs/logstash.yml:/usr/share/logstash/config/logstash.yml
