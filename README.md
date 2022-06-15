@@ -10,9 +10,7 @@ It does not tell you **how** to monitor kafka application, but rather it's going
 
 - [docker](https://www.docker.com/)
 - [java](https://www.java.com/en/download/)
-- [httpie](https://httpie.io/)
 - [curl](https://curl.se/)
-- [jq](https://stedolan.github.io/jq/)
 - [elasticsearch](https://www.docker.elastic.co/r/elasticsearch), [elasticsearch settings](https://www.elastic.co/guide/en/elasticsearch/reference/master/docker.html)
 - [kibana](https://www.docker.elastic.co/r/kibana), [kibana settings](https://www.elastic.co/guide/en/kibana/master/docker.html)
 - [logstash](https://www.docker.elastic.co/r/logstash), [logstash settings](https://www.elastic.co/guide/en/logstash/master/docker.html)
@@ -28,7 +26,7 @@ docker network create elk-sandbox_network
 Run the elk cluster:
 
 ```sh
-cd elk && docker compose up -d
+cd elk && docker compose up -d && cd ..
 ```
 
 > Update the virtual memory as it is said at [here](https://www.elastic.co/guide/en/elasticsearch/reference/master/docker.html#_set_vm_max_map_count_to_at_least_262144) if you are receiving erros like **max virtual memory areas vm.max_map_count is too low, increase to at least [262144]**.
@@ -36,7 +34,7 @@ cd elk && docker compose up -d
 Test that is running:
 
 ```sh
-http -b :9200/_cat/nodes v==true
+curl "http://localhost:9200/_cat/nodes?v=true"
 ```
 
 Creating ELK Sandbox Dashboard:
@@ -44,7 +42,7 @@ Creating ELK Sandbox Dashboard:
 ```sh
 curl -s -X POST "http://localhost:5601/api/saved_objects/_import?createNewCopies=true" \
         -H "kbn-xsrf: true" --form \
-        file=@./requests/create-sandbox-dashboard.ndjson | jq '.success'
+        file=@./requests/create-sandbox-dashboard.ndjson
 ```
 
 Run the logs generator app:
