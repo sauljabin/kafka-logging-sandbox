@@ -1,5 +1,9 @@
 # Kafka Application Dashboard
 
+The goal of this project is to present the visualization of some monitoring dashboards for kafka applications.
+
+It does not tell you **how** to monitor kafka application, but rather it's going to present **what** data you need to monitor and visualize on a dashboard.
+
 > This project is powered by [ELK Stack](https://www.elastic.co/what-is/elk-stack) sandbox locally.
 
 ## Dependencies
