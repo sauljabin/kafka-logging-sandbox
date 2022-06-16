@@ -42,7 +42,7 @@ Creating ELK Sandbox Dashboard:
 ```sh
 curl -s -X POST "http://localhost:5601/api/saved_objects/_import?createNewCopies=true" \
         -H "kbn-xsrf: true" --form \
-        file=@./requests/create-sandbox-dashboard.ndjson
+        file=@./requests/create-dashboards.ndjson
 ```
 
 Run the logs generator app:

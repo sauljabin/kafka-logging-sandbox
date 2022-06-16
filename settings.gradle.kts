@@ -1,2 +1,2 @@
-rootProject.name = "elk-sandbox"
+rootProject.name = "kafka-application-dashboard-examples"
 include("logs-generator")

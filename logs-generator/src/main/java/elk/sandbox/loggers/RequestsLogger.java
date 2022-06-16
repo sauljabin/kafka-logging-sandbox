@@ -1,12 +1,15 @@
-package elk.sandbox;
+package elk.sandbox.loggers;
 
+import elk.sandbox.models.Error;
+import elk.sandbox.models.Service;
+import elk.sandbox.models.Success;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Random;
 import java.util.TimerTask;
 
 @Slf4j
-public class LogTask extends TimerTask {
+public class RequestsLogger extends TimerTask {
 
     private static final int MAX_PROBABILITY = 100;
     private static final int PROBABILITY = 80;

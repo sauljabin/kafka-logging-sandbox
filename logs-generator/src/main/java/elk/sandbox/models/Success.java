@@ -1,4 +1,4 @@
-package elk.sandbox;
+package elk.sandbox.models;
 
 import java.util.Random;
 
@@ -12,10 +12,10 @@ public enum Success {
     private static final int SIZE = VALUES.length;
     private static final Random RANDOM = new Random();
 
-    private String message;
-    private int status;
+    private final String message;
+    private final int status;
 
-    private Success(String message, int status) {
+    Success(String message, int status) {
         this.message = message;
         this.status = status;
     }

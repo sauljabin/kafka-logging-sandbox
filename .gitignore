@@ -7,3 +7,4 @@ bin/
 .project
 .classpath
 .dccache
+.DS_Store

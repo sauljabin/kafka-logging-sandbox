@@ -1,4 +1,4 @@
-package elk.sandbox;
+package elk.sandbox.models;
 
 import org.apache.commons.text.WordUtils;
 
