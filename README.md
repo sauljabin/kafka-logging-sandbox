@@ -54,3 +54,9 @@ Run the logs generator app:
 ```
 
 Open kibana at [http://localhost:5601](http://localhost:5601)
+
+## Screenshots
+
+<p align="center">
+<img alt="dashboard" src="https://raw.githubusercontent.com/sauljabin/kafka-application-dashboard-examples/main/screenshots/dashboard.png">
+</p>
