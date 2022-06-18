@@ -13,8 +13,8 @@ public class ProducerConsumerRateLogger extends TimerTask {
     private static final int MAX_PROBABILITY = 100;
     private static final int PROBABILITY = 80;
     private static final Random random = new Random();
-    private static final String MESSAGE_CONSUMER = "client.id={} member.id={} group.id={} client.type={} duration={} host={} topic={}";
-    private static final String MESSAGE_PRODUCER = "client.id={} client.type={} duration={} host={} topic={}";
+    private static final String MESSAGE_CONSUMER = "log.type=event client.id={} member.id={} group.id={} client.type={} duration={} host={} topic={}";
+    private static final String MESSAGE_PRODUCER = "log.type=event client.id={} client.type={} duration={} host={} topic={}";
 
     private boolean isConsumer() {
         return random.nextInt(MAX_PROBABILITY) < PROBABILITY;
