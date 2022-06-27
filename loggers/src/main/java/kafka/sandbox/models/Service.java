@@ -1,4 +1,4 @@
-package elk.sandbox.models;
+package kafka.sandbox.models;
 
 import org.apache.commons.text.WordUtils;
 

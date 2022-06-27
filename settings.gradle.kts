@@ -1,2 +1,2 @@
-rootProject.name = "kafka-application-dashboard-examples"
-include("logs-generator")
+rootProject.name = "kafka-logging-sandbox"
+include("loggers")

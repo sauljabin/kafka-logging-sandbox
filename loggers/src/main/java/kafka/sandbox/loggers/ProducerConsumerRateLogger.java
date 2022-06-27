@@ -1,7 +1,7 @@
-package elk.sandbox.loggers;
+package kafka.sandbox.loggers;
 
-import elk.sandbox.models.Consumer;
-import elk.sandbox.models.Producer;
+import kafka.sandbox.models.Consumer;
+import kafka.sandbox.models.Producer;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Random;

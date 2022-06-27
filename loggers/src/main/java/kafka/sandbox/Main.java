@@ -1,7 +1,7 @@
-package elk.sandbox;
+package kafka.sandbox;
 
-import elk.sandbox.loggers.ProducerConsumerRateLogger;
-import elk.sandbox.loggers.RebalancingLogger;
+import kafka.sandbox.loggers.ProducerConsumerRateLogger;
+import kafka.sandbox.loggers.RebalancingLogger;
 
 import java.util.Timer;
 

@@ -16,7 +16,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("elk.sandbox.Main")
+    mainClass.set("kafka.sandbox.Main")
 }
 
 tasks.test {

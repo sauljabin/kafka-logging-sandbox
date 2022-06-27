@@ -39,4 +39,4 @@ volumes:
 networks:
   default:
     external: true
-    name: elk-sandbox_network
+    name: kafka-logging-sandbox_network
