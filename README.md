@@ -49,7 +49,7 @@ Run the logs generator app:
 ## Screenshots
 
 <p align="center">
-<img alt="dashboard" src="https://raw.githubusercontent.com/sauljabin/kafka-application-dashboard-examples/main/screenshots/dashboard.png">
+<img alt="dashboard" src="https://raw.githubusercontent.com/sauljabin/kafka-logging-sandbox/main/screenshots/dashboard.png">
 </p>
 
 ## Interesting Links
