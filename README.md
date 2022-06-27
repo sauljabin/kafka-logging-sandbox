@@ -22,7 +22,7 @@ docker compose up -d
 
 > If you are having erros like "**max virtual memory areas vm.max_map_count is too low, increase to at least [262144]**" look at [here](https://www.elastic.co/guide/en/elasticsearch/reference/master/docker.html#_set_vm_max_map_count_to_at_least_262144).
 
-Test that is running:
+Test if elasticsearch is running:
 
 ```sh
 curl "http://localhost:9200/_cat/nodes?v=true"
